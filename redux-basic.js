@@ -8,6 +8,9 @@ const initialState = { counter: 0 };
 
 //reducer
 const rootReducer = (state = initialState, action) => {
+
+	const {type, playload} = action
+
 	if (action.type === "INC_COUNTER") {
 		return {
 			...state, //first copy the old state
