@@ -1,4 +1,4 @@
-import * as actionTypes from "../actions"
+import * as actionTypes from "../actions/actionTypes"
 
 const insitialState = {
   counter: 0,
@@ -40,6 +40,5 @@ const counterReducer = (state = insitialState, action) => {
 }
 
 export default counterReducer
-
 
 // axios.post("url", payload)

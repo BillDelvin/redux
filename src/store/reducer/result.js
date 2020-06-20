@@ -1,4 +1,4 @@
-import * as actionTypes from "../actions"
+import * as actionTypes from "../actions/actionTypes"
 
 const insitialState = {
   result: [],
@@ -9,6 +9,7 @@ const resultReducer = (state = insitialState, action) => {
 
   switch (type) {
     case actionTypes.STORE_RESULT:
+      // change data can here
       return {
         ...state,
         result: state.result.concat({ id: new Date(), payload }), // dont use push(), why ? push() can manipulate the original state
